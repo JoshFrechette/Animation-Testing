@@ -10,7 +10,4 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
 }
 
-app.listen(PORT, function() {
-
-    console.log("Server listening on: http://localhost:" + PORT);
-  });
+app.listen(PORT, console.log(`Now listening on port ${PORT}!`));
